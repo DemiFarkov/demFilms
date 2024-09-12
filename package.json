@@ -6,12 +6,12 @@
   "homepage": "https://demifarkov.github.io/demFilms/",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+"deploy": "gh-pages -d dist",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "clean-source": "rimraf README.md src webroot package.json",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "clean-source": "rimraf README.md src webroot package.json"
   },
   "dependencies": {
     "@mantine/core": "^7.12.2",
