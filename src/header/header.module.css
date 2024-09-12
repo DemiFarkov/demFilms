@@ -1,0 +1,53 @@
+.header {
+    margin: 30px;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.pageTitle {
+    margin: 0;
+    width: 40%;
+    text-align: start;
+    color: #d13e3e;
+}
+
+.pageNav {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pageNavPointRoot {
+    margin: 0;
+    border-radius: 0;
+    border: none;
+}
+
+.pageNavPointRootDrawer {
+    width: 100%;
+
+}
+@media (max-width: 1350px) {
+    .pageNavPointLabel{
+        font-size: 20px;
+    }
+}
+@media (max-width: 900px) {
+    .pageNav {
+
+        display: flex;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+        height: 85vh;
+    }
+
+    .pageNavPointRootDrawer {
+        margin: 10px 0;
+    }
+    .header{
+        justify-content: space-between;
+    }
+}

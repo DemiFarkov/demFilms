@@ -1,0 +1,89 @@
+.serialsContainer {
+    padding: 20px;
+    height: 100%;
+    width: 80vw;
+    background: #2d3033;
+}
+
+.serialsCardsContainer {
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.cardRoot {
+    width: 30%;
+    margin-left: 5%;
+}
+
+.cardRoot:nth-child(4n),
+.cardRoot:first-child {
+    margin-left: 0;
+}
+
+.cardTitle {
+    color: #c9c9c9;
+    font-size: 30px;
+}
+
+.cardDescription {
+    margin-top: 0;
+    color: #828282;
+    text-align: start;
+}
+
+.cardBody {
+    width: 100%;
+    background: #5c6064a4;
+}
+
+.cardNavRoot {
+    width: 80%;
+    position: absolute;
+    bottom: 10px;
+    left: 7%;
+    color: #c9c9c9;
+}
+
+@media (max-width: 1530px) {
+    .cardNavLabel {
+        font-size: 25px;
+    }
+
+
+}
+@media (max-width: 1350px) {
+    .cardNavLabel {
+        font-size: 25px;
+    }
+
+    .cardRoot {
+        width: 45%;
+        margin-left: 0;
+        padding-bottom: 15%;
+    }
+
+    .cardRoot:nth-child(2n) {
+        margin-left: 5%;
+    }
+}
+@media (max-width: 900px) {
+    .cardNavLabel {
+        font-size: 16px;
+    }
+    .cardDescription {font-size: 20px;
+    }
+
+}
+@media (max-width: 800px) {
+    .cardRoot {
+        width: 100%;
+        margin-left: 0 !important;
+        padding-bottom: 15%;
+    }
+    .cardTitle {
+        font-size: 40px;
+    }
+}

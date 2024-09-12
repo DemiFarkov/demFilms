@@ -1,0 +1,11 @@
+.serialsContainer {
+    padding: 20px;
+    height: 90vh;
+    width: 80vw;
+    background: #2d3033;
+}
+.serialsCardsContainer {
+
+    display: flex;
+    flex-wrap: wrap;
+}
