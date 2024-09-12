@@ -7,20 +7,26 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Welcome from "./welcome";
 import Serials from "./serials/serials";
 import Films from "./films/films";
+import Page404 from "./page404";
 
 function App() {
-
   return (
-    <MantineProvider>
+    <>
+      <div>hi hi</div>
+      //{" "}
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Welcome />} />
-          <Route path="/serials/serials" element={<Serials />} />
-          <Route path="/films/films" element={<Films />} />
+        <MantineProvider>
+          <Routes>
+            {/* <Route path="*" element={<Page404 />} /> */}
 
-        </Routes>
+            <Route path="/" element={<Welcome />} />
+            <Route path="/serials/serials" element={<Serials />} />
+            <Route path="/films/films" element={<Films />} />
+          </Routes>
+        </MantineProvider>
       </BrowserRouter>
-    </MantineProvider>
+      //{" "}
+    </>
   );
 }
 
